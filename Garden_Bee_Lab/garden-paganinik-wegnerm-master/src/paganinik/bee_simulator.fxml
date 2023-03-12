@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" onKeyPressed="#moveBees" vgap="10" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="paganinik.GardenController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane id="theGarden" fx:id="theGarden" prefHeight="601.0" prefWidth="600.0" />
+      <Pane prefHeight="135.0" prefWidth="600.0" GridPane.rowIndex="1">
+         <children>
+            <TextField fx:id="flowerBeesTextField" layoutX="139.0" layoutY="30.0" onAction="#setNumEntities" prefHeight="25.0" prefWidth="92.0" text="0" />
+            <TextField fx:id="thiefFlowerTextField" layoutX="388.0" layoutY="68.0" onAction="#setNumEntities" prefHeight="25.0" prefWidth="92.0" text="0" />
+            <TextField fx:id="medicFlowerTextField" layoutX="388.0" layoutY="30.0" onAction="#setNumEntities" prefHeight="25.0" prefWidth="92.0" text="0" />
+            <TextField fx:id="destroyerBeesTextField" layoutX="139.0" layoutY="68.0" onAction="#setNumEntities" prefHeight="25.0" prefWidth="92.0" text="0" />
+            <Label layoutX="64.0" layoutY="34.0" text="Flower Bees" />
+            <Label layoutX="310.0" layoutY="72.0" text="Thief Flowers" />
+            <Label layoutX="307.0" layoutY="34.0" text="Medic Flowers" />
+            <Label layoutX="55.0" layoutY="72.0" text="Destroyer Bees" />
+            <Button layoutX="258.0" layoutY="93.0" mnemonicParsing="false" text="Button" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
